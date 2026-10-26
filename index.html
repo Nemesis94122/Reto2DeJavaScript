@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Estudiantes - Promesas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="card">
+        <h2>Buscador de Estudiantes</h2>
+        <p class="description">Ingresa el ID del estudiante para realizar una consulta asíncrona mediante Promesas.</p>
+        <div class="search-container">
+            <input type="number" id="inputId" placeholder="Ej. 1, 2, 3 o 10" min="1">
+            <button id="btnSearch">Consultar</button>
+        </div>
+        <div class="console-box">
+            <div class="console-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="title">Consola de Salida</span>
+            </div>
+            <pre id="consoleOutput">Esperando parámetros de búsqueda...</pre>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

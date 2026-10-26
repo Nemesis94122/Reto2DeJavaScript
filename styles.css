@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #121214;
+    color: #e1e1e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: #202024;
+    border-radius: 8px;
+    padding: 32px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.description {
+    color: #8d8d99;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.search-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+input {
+    flex: 1;
+    background-color: #121214;
+    border: 1px solid #323238;
+    border-radius: 6px;
+    padding: 14px;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #00b37e;
+}
+
+button {
+    background-color: #00875f;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #00b37e;
+}
+
+.console-box {
+    background-color: #121214;
+    border: 1px solid #323238;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.console-header {
+    background-color: #19191c;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid #323238;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.red { background-color: #f75a68; }
+.yellow { background-color: #ffbb55; }
+.green { background-color: #00b37e; }
+
+.console-header .title {
+    font-size: 12px;
+    color: #8d8d99;
+    margin-left: 8px;
+}
+
+pre {
+    padding: 18px;
+    font-family: "Fira Code", Monaco, Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e1e1e6;
+    white-space: pre-wrap;
+}
+
+.success-text {
+    color: #e1e1e6;
+}
+
+.error-text {
+    color: #f75a68;
+}
